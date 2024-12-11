@@ -1,0 +1,14 @@
+{
+  "name": "@base-library/my-component",
+  "description": "Component description",
+  "version": "0.1.0",
+  "homepage": "https://github.com/owner/project#readme",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./astro": "./MyComponent.astro"
+  },
+  "files": ["index.js", "MyAstroComponent.astro"],
+  "keywords": ["astro", "withastro", "astro-component", "...", "..."],
+"author": "Matterholt"
+}
