@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "start": "astro --root demo dev",
+  "build": "astro --root demo build",
+  "serve": "astro --root demo preview",
+  "workspaces": [
+    "demo",
+    "packages/*"
+  ]
+}

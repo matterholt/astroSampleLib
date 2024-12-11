@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+
+const { imageSrc, imageAlt, text } = Astro.props;
+---
+
+<div class="textimage">
+    {
+        imageSrc ? (
+            <Image height="550" class="image" src={imageSrc} alt={imageAlt} />
+        ) : null
+    }
+    <div class="titleimage_text_overlay">
+        <slot />
+    </div>
+</div>
+
+<style>
+    .textimage {
+        display: grid;
+        grid-template-rows: 0px 1fr 0px;
+        height: 550px;
+    }
+    .titleimage_text_overlay {
+        display: grid;
+        place-items: center;
+        align-self: center;
+        background-color: #00000085;
+        font-size: 15px;
+        text-transform: uppercase;
+        height: inherit;
+    }
+</style>
